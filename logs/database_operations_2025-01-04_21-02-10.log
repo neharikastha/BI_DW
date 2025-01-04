@@ -1,0 +1,10 @@
+2025-01-04 21:02:10,802 - INFO - Configuration file loaded successfully.
+2025-01-04 21:02:10,854 - INFO - Successfully connected to the database.
+2025-01-04 21:02:10,855 - INFO - Query executed successfully. Results:
+2025-01-04 21:02:10,855 - INFO - (1, 'Laptop', 'Electronics', Decimal('1200.50'), 20, datetime.date(2025, 1, 1), 'High-performance laptop for gaming and work', 1)
+2025-01-04 21:02:10,855 - INFO - (2, 'Smartphone', 'Electronics', Decimal('800.00'), 50, datetime.date(2025, 1, 2), 'Latest model with a great camera and battery life', 2)
+2025-01-04 21:02:10,856 - INFO - (3, 'Headphones', 'Accessories', Decimal('50.00'), 150, datetime.date(2025, 1, 3), 'Noise-canceling headphones with superior sound quality', 3)
+2025-01-04 21:02:10,856 - INFO - (4, 'Tablet', 'Electronics', Decimal('300.00'), 30, datetime.date(2025, 1, 1), 'Lightweight tablet for reading and browsing', 1)
+2025-01-04 21:02:10,856 - INFO - (5, 'Chair', 'Furniture', Decimal('100.00'), 40, datetime.date(2025, 1, 2), 'Comfortable office chair with adjustable height', 4)
+2025-01-04 21:02:10,856 - INFO - (6, 'Desk', 'Furniture', Decimal('250.00'), 15, datetime.date(2025, 1, 3), 'Spacious desk with multiple drawers', 4)
+2025-01-04 21:02:10,857 - INFO - Database connection closed.

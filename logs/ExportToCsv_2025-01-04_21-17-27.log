@@ -1,0 +1,5 @@
+2025-01-04 21:17:27,268 - INFO - Configuration loaded successfully.
+2025-01-04 21:17:27,317 - INFO - Successfully connected to the database.
+2025-01-04 21:17:27,318 - INFO - Query executed successfully. Results fetched.
+2025-01-04 21:17:27,318 - INFO - Data successfully written to C:/Users/nehar/PycharmProjects/ETL_Project/output/product_data.csv.
+2025-01-04 21:17:27,319 - INFO - Database connection closed.
