@@ -4,20 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="870de6e0-d5e1-4ed5-a10d-39c7d51f72fb" name="Changes" comment="Database Connection and Staging table">
-      <change afterPath="$PROJECT_DIR$/logs/database_operations_2025-01-05_08-04-34.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/logs/product_logs/product.py_2025-01-05_09-47-16.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/logs/product_logs/product.py_2025-01-05_09-48-30.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/logs/product_logs/product_2025-01-05_09-48-42.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/logs/product_logs/product_2025-01-05_09-51-30.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/logs/product_logs/product_2025-01-05_10-17-09.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/logs/product_logs/product_2025-01-05_10-20-52.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/logs/product_logs/product_2025-01-05_10-30-40.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/logs/product_logs/product_2025-01-05_10-38-03.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/logs/product_logs/product_2025-01-05_12-56-23.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/logs/test_2025-01-05_09-30-34.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/logs/test_2025-01-05_09-31-23.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/product.py" afterDir="false" />
+    <list default="true" id="870de6e0-d5e1-4ed5-a10d-39c7d51f72fb" name="Changes" comment="changes : staging table">
       <change afterPath="$PROJECT_DIR$/../My_All_Projects/Flutter_projects/DrishtiKosh" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../My_All_Projects/Flutter_projects/SDK/flutter" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../My_All_Projects/Flutter_projects/flutter_application_1/.gitignore" afterDir="false" />
@@ -169,20 +156,6 @@
       <change afterPath="$PROJECT_DIR$/../My_All_Projects/Flutter_projects/platform-tools/source.properties" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../My_All_Projects/Flutter_projects/platform-tools/sqlite3.exe" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../My_All_Projects/MinorProject" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/library/Database.py" beforeDir="false" afterPath="$PROJECT_DIR$/library/Database.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/library/ExportToCsv.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/library/Logger.py" beforeDir="false" afterPath="$PROJECT_DIR$/library/Logger.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/library/Staging.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/library/Variables.py" beforeDir="false" afterPath="$PROJECT_DIR$/library/Variables.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/CsvToDatabaseLoader_2025-01-04_21-10-41.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/CsvToDatabaseLoader_2025-01-04_21-10-51.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/CsvToDatabaseLoader_2025-01-04_21-16-22.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/CsvToDatabaseLoader_2025-01-04_21-16-42.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/CsvToDatabaseLoader_2025-01-04_21-17-06.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/ExportToCsv_2025-01-04_21-07-49.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/ExportToCsv_2025-01-04_21-17-27.log" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../MinorProject/Close" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../MinorProject/README.md" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../MinorProject/backend/.env" beforeDir="false" />
@@ -601,5 +574,9 @@
       <updated>1734837200253</updated>
     </task>
     <servers />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="changes : staging table" />
+    <option name="LAST_COMMIT_MESSAGE" value="changes : staging table" />
   </component>
 </project>
