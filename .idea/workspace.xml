@@ -4,7 +4,405 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="870de6e0-d5e1-4ed5-a10d-39c7d51f72fb" name="Changes" comment="" />
+    <list default="true" id="870de6e0-d5e1-4ed5-a10d-39c7d51f72fb" name="Changes" comment="Database Connection and Staging table">
+      <change afterPath="$PROJECT_DIR$/logs/database_operations_2025-01-05_08-04-34.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/logs/product_logs/product.py_2025-01-05_09-47-16.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/logs/product_logs/product.py_2025-01-05_09-48-30.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/logs/product_logs/product_2025-01-05_09-48-42.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/logs/product_logs/product_2025-01-05_09-51-30.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/logs/product_logs/product_2025-01-05_10-17-09.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/logs/product_logs/product_2025-01-05_10-20-52.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/logs/product_logs/product_2025-01-05_10-30-40.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/logs/product_logs/product_2025-01-05_10-38-03.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/logs/product_logs/product_2025-01-05_12-56-23.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/logs/test_2025-01-05_09-30-34.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/logs/test_2025-01-05_09-31-23.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/product.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../My_All_Projects/Flutter_projects/DrishtiKosh" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../My_All_Projects/Flutter_projects/SDK/flutter" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../My_All_Projects/Flutter_projects/flutter_application_1/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../My_All_Projects/Flutter_projects/flutter_application_1/.metadata" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../My_All_Projects/Flutter_projects/flutter_application_1/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../My_All_Projects/Flutter_projects/flutter_application_1/analysis_options.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../My_All_Projects/Flutter_projects/flutter_application_1/android/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../My_All_Projects/Flutter_projects/flutter_application_1/android/app/build.gradle" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../My_All_Projects/Flutter_projects/flutter_application_1/android/app/src/debug/AndroidManifest.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../My_All_Projects/Flutter_projects/flutter_application_1/android/app/src/main/AndroidManifest.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../My_All_Projects/Flutter_projects/flutter_application_1/android/app/src/main/kotlin/com/example/flutter_application_1/MainActivity.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../My_All_Projects/Flutter_projects/flutter_application_1/android/app/src/main/res/drawable-v21/launch_background.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../My_All_Projects/Flutter_projects/flutter_application_1/android/app/src/main/res/drawable/launch_background.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../My_All_Projects/Flutter_projects/flutter_application_1/android/app/src/main/res/mipmap-hdpi/ic_launcher.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../My_All_Projects/Flutter_projects/flutter_application_1/android/app/src/main/res/mipmap-mdpi/ic_launcher.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../My_All_Projects/Flutter_projects/flutter_application_1/android/app/src/main/res/mipmap-xhdpi/ic_launcher.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../My_All_Projects/Flutter_projects/flutter_application_1/android/app/src/main/res/mipmap-xxhdpi/ic_launcher.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../My_All_Projects/Flutter_projects/flutter_application_1/android/app/src/main/res/mipmap-xxxhdpi/ic_launcher.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../My_All_Projects/Flutter_projects/flutter_application_1/android/app/src/main/res/values-night/styles.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../My_All_Projects/Flutter_projects/flutter_application_1/android/app/src/main/res/values/styles.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../My_All_Projects/Flutter_projects/flutter_application_1/android/app/src/profile/AndroidManifest.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../My_All_Projects/Flutter_projects/flutter_application_1/android/build.gradle" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../My_All_Projects/Flutter_projects/flutter_application_1/android/gradle.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../My_All_Projects/Flutter_projects/flutter_application_1/android/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../My_All_Projects/Flutter_projects/flutter_application_1/android/settings.gradle" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../My_All_Projects/Flutter_projects/flutter_application_1/ios/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../My_All_Projects/Flutter_projects/flutter_application_1/ios/Flutter/AppFrameworkInfo.plist" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../My_All_Projects/Flutter_projects/flutter_application_1/ios/Flutter/Debug.xcconfig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../My_All_Projects/Flutter_projects/flutter_application_1/ios/Flutter/Release.xcconfig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../My_All_Projects/Flutter_projects/flutter_application_1/ios/Runner.xcodeproj/project.pbxproj" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../My_All_Projects/Flutter_projects/flutter_application_1/ios/Runner.xcodeproj/project.xcworkspace/contents.xcworkspacedata" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../My_All_Projects/Flutter_projects/flutter_application_1/ios/Runner.xcodeproj/project.xcworkspace/xcshareddata/IDEWorkspaceChecks.plist" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../My_All_Projects/Flutter_projects/flutter_application_1/ios/Runner.xcodeproj/project.xcworkspace/xcshareddata/WorkspaceSettings.xcsettings" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../My_All_Projects/Flutter_projects/flutter_application_1/ios/Runner.xcodeproj/xcshareddata/xcschemes/Runner.xcscheme" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../My_All_Projects/Flutter_projects/flutter_application_1/ios/Runner.xcworkspace/contents.xcworkspacedata" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../My_All_Projects/Flutter_projects/flutter_application_1/ios/Runner.xcworkspace/xcshareddata/IDEWorkspaceChecks.plist" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../My_All_Projects/Flutter_projects/flutter_application_1/ios/Runner.xcworkspace/xcshareddata/WorkspaceSettings.xcsettings" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../My_All_Projects/Flutter_projects/flutter_application_1/ios/Runner/AppDelegate.swift" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../My_All_Projects/Flutter_projects/flutter_application_1/ios/Runner/Assets.xcassets/AppIcon.appiconset/Contents.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../My_All_Projects/Flutter_projects/flutter_application_1/ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-1024x1024@1x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../My_All_Projects/Flutter_projects/flutter_application_1/ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-20x20@1x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../My_All_Projects/Flutter_projects/flutter_application_1/ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-20x20@2x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../My_All_Projects/Flutter_projects/flutter_application_1/ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-20x20@3x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../My_All_Projects/Flutter_projects/flutter_application_1/ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-29x29@1x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../My_All_Projects/Flutter_projects/flutter_application_1/ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-29x29@2x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../My_All_Projects/Flutter_projects/flutter_application_1/ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-29x29@3x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../My_All_Projects/Flutter_projects/flutter_application_1/ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-40x40@1x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../My_All_Projects/Flutter_projects/flutter_application_1/ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-40x40@2x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../My_All_Projects/Flutter_projects/flutter_application_1/ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-40x40@3x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../My_All_Projects/Flutter_projects/flutter_application_1/ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-60x60@2x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../My_All_Projects/Flutter_projects/flutter_application_1/ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-60x60@3x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../My_All_Projects/Flutter_projects/flutter_application_1/ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-76x76@1x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../My_All_Projects/Flutter_projects/flutter_application_1/ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-76x76@2x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../My_All_Projects/Flutter_projects/flutter_application_1/ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-83.5x83.5@2x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../My_All_Projects/Flutter_projects/flutter_application_1/ios/Runner/Assets.xcassets/LaunchImage.imageset/Contents.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../My_All_Projects/Flutter_projects/flutter_application_1/ios/Runner/Assets.xcassets/LaunchImage.imageset/LaunchImage.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../My_All_Projects/Flutter_projects/flutter_application_1/ios/Runner/Assets.xcassets/LaunchImage.imageset/LaunchImage@2x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../My_All_Projects/Flutter_projects/flutter_application_1/ios/Runner/Assets.xcassets/LaunchImage.imageset/LaunchImage@3x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../My_All_Projects/Flutter_projects/flutter_application_1/ios/Runner/Assets.xcassets/LaunchImage.imageset/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../My_All_Projects/Flutter_projects/flutter_application_1/ios/Runner/Base.lproj/LaunchScreen.storyboard" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../My_All_Projects/Flutter_projects/flutter_application_1/ios/Runner/Base.lproj/Main.storyboard" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../My_All_Projects/Flutter_projects/flutter_application_1/ios/Runner/Info.plist" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../My_All_Projects/Flutter_projects/flutter_application_1/ios/Runner/Runner-Bridging-Header.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../My_All_Projects/Flutter_projects/flutter_application_1/ios/RunnerTests/RunnerTests.swift" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../My_All_Projects/Flutter_projects/flutter_application_1/lib/camera_screen.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../My_All_Projects/Flutter_projects/flutter_application_1/lib/dictionary_screen.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../My_All_Projects/Flutter_projects/flutter_application_1/lib/homepage.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../My_All_Projects/Flutter_projects/flutter_application_1/lib/main.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../My_All_Projects/Flutter_projects/flutter_application_1/lib/search_screen.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../My_All_Projects/Flutter_projects/flutter_application_1/lib/splash_screen.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../My_All_Projects/Flutter_projects/flutter_application_1/lib/translator_screen.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../My_All_Projects/Flutter_projects/flutter_application_1/linux/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../My_All_Projects/Flutter_projects/flutter_application_1/linux/CMakeLists.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../My_All_Projects/Flutter_projects/flutter_application_1/linux/flutter/CMakeLists.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../My_All_Projects/Flutter_projects/flutter_application_1/linux/flutter/generated_plugin_registrant.cc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../My_All_Projects/Flutter_projects/flutter_application_1/linux/flutter/generated_plugin_registrant.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../My_All_Projects/Flutter_projects/flutter_application_1/linux/flutter/generated_plugins.cmake" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../My_All_Projects/Flutter_projects/flutter_application_1/linux/main.cc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../My_All_Projects/Flutter_projects/flutter_application_1/linux/my_application.cc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../My_All_Projects/Flutter_projects/flutter_application_1/linux/my_application.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../My_All_Projects/Flutter_projects/flutter_application_1/macos/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../My_All_Projects/Flutter_projects/flutter_application_1/macos/Flutter/Flutter-Debug.xcconfig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../My_All_Projects/Flutter_projects/flutter_application_1/macos/Flutter/Flutter-Release.xcconfig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../My_All_Projects/Flutter_projects/flutter_application_1/macos/Flutter/GeneratedPluginRegistrant.swift" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../My_All_Projects/Flutter_projects/flutter_application_1/macos/Runner.xcodeproj/project.pbxproj" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../My_All_Projects/Flutter_projects/flutter_application_1/macos/Runner.xcodeproj/project.xcworkspace/xcshareddata/IDEWorkspaceChecks.plist" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../My_All_Projects/Flutter_projects/flutter_application_1/macos/Runner.xcodeproj/xcshareddata/xcschemes/Runner.xcscheme" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../My_All_Projects/Flutter_projects/flutter_application_1/macos/Runner.xcworkspace/contents.xcworkspacedata" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../My_All_Projects/Flutter_projects/flutter_application_1/macos/Runner.xcworkspace/xcshareddata/IDEWorkspaceChecks.plist" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../My_All_Projects/Flutter_projects/flutter_application_1/macos/Runner/AppDelegate.swift" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../My_All_Projects/Flutter_projects/flutter_application_1/macos/Runner/Assets.xcassets/AppIcon.appiconset/Contents.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../My_All_Projects/Flutter_projects/flutter_application_1/macos/Runner/Assets.xcassets/AppIcon.appiconset/app_icon_1024.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../My_All_Projects/Flutter_projects/flutter_application_1/macos/Runner/Assets.xcassets/AppIcon.appiconset/app_icon_128.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../My_All_Projects/Flutter_projects/flutter_application_1/macos/Runner/Assets.xcassets/AppIcon.appiconset/app_icon_16.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../My_All_Projects/Flutter_projects/flutter_application_1/macos/Runner/Assets.xcassets/AppIcon.appiconset/app_icon_256.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../My_All_Projects/Flutter_projects/flutter_application_1/macos/Runner/Assets.xcassets/AppIcon.appiconset/app_icon_32.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../My_All_Projects/Flutter_projects/flutter_application_1/macos/Runner/Assets.xcassets/AppIcon.appiconset/app_icon_512.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../My_All_Projects/Flutter_projects/flutter_application_1/macos/Runner/Assets.xcassets/AppIcon.appiconset/app_icon_64.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../My_All_Projects/Flutter_projects/flutter_application_1/macos/Runner/Base.lproj/MainMenu.xib" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../My_All_Projects/Flutter_projects/flutter_application_1/macos/Runner/Configs/AppInfo.xcconfig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../My_All_Projects/Flutter_projects/flutter_application_1/macos/Runner/Configs/Debug.xcconfig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../My_All_Projects/Flutter_projects/flutter_application_1/macos/Runner/Configs/Release.xcconfig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../My_All_Projects/Flutter_projects/flutter_application_1/macos/Runner/Configs/Warnings.xcconfig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../My_All_Projects/Flutter_projects/flutter_application_1/macos/Runner/DebugProfile.entitlements" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../My_All_Projects/Flutter_projects/flutter_application_1/macos/Runner/Info.plist" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../My_All_Projects/Flutter_projects/flutter_application_1/macos/Runner/MainFlutterWindow.swift" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../My_All_Projects/Flutter_projects/flutter_application_1/macos/Runner/Release.entitlements" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../My_All_Projects/Flutter_projects/flutter_application_1/macos/RunnerTests/RunnerTests.swift" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../My_All_Projects/Flutter_projects/flutter_application_1/pubspec.lock" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../My_All_Projects/Flutter_projects/flutter_application_1/pubspec.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../My_All_Projects/Flutter_projects/flutter_application_1/test/widget_test.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../My_All_Projects/Flutter_projects/flutter_application_1/web/favicon.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../My_All_Projects/Flutter_projects/flutter_application_1/web/icons/Icon-192.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../My_All_Projects/Flutter_projects/flutter_application_1/web/icons/Icon-512.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../My_All_Projects/Flutter_projects/flutter_application_1/web/icons/Icon-maskable-192.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../My_All_Projects/Flutter_projects/flutter_application_1/web/icons/Icon-maskable-512.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../My_All_Projects/Flutter_projects/flutter_application_1/web/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../My_All_Projects/Flutter_projects/flutter_application_1/web/manifest.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../My_All_Projects/Flutter_projects/flutter_application_1/windows/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../My_All_Projects/Flutter_projects/flutter_application_1/windows/CMakeLists.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../My_All_Projects/Flutter_projects/flutter_application_1/windows/flutter/CMakeLists.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../My_All_Projects/Flutter_projects/flutter_application_1/windows/flutter/generated_plugin_registrant.cc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../My_All_Projects/Flutter_projects/flutter_application_1/windows/flutter/generated_plugin_registrant.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../My_All_Projects/Flutter_projects/flutter_application_1/windows/flutter/generated_plugins.cmake" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../My_All_Projects/Flutter_projects/flutter_application_1/windows/runner/CMakeLists.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../My_All_Projects/Flutter_projects/flutter_application_1/windows/runner/Runner.rc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../My_All_Projects/Flutter_projects/flutter_application_1/windows/runner/flutter_window.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../My_All_Projects/Flutter_projects/flutter_application_1/windows/runner/flutter_window.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../My_All_Projects/Flutter_projects/flutter_application_1/windows/runner/main.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../My_All_Projects/Flutter_projects/flutter_application_1/windows/runner/resource.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../My_All_Projects/Flutter_projects/flutter_application_1/windows/runner/resources/app_icon.ico" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../My_All_Projects/Flutter_projects/flutter_application_1/windows/runner/runner.exe.manifest" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../My_All_Projects/Flutter_projects/flutter_application_1/windows/runner/utils.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../My_All_Projects/Flutter_projects/flutter_application_1/windows/runner/utils.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../My_All_Projects/Flutter_projects/flutter_application_1/windows/runner/win32_window.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../My_All_Projects/Flutter_projects/flutter_application_1/windows/runner/win32_window.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../My_All_Projects/Flutter_projects/platform-tools/AdbWinApi.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../My_All_Projects/Flutter_projects/platform-tools/AdbWinUsbApi.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../My_All_Projects/Flutter_projects/platform-tools/NOTICE.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../My_All_Projects/Flutter_projects/platform-tools/adb.exe" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../My_All_Projects/Flutter_projects/platform-tools/etc1tool.exe" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../My_All_Projects/Flutter_projects/platform-tools/fastboot.exe" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../My_All_Projects/Flutter_projects/platform-tools/hprof-conv.exe" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../My_All_Projects/Flutter_projects/platform-tools/libwinpthread-1.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../My_All_Projects/Flutter_projects/platform-tools/make_f2fs.exe" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../My_All_Projects/Flutter_projects/platform-tools/make_f2fs_casefold.exe" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../My_All_Projects/Flutter_projects/platform-tools/mke2fs.conf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../My_All_Projects/Flutter_projects/platform-tools/mke2fs.exe" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../My_All_Projects/Flutter_projects/platform-tools/source.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../My_All_Projects/Flutter_projects/platform-tools/sqlite3.exe" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../My_All_Projects/MinorProject" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/library/Database.py" beforeDir="false" afterPath="$PROJECT_DIR$/library/Database.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/library/ExportToCsv.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/library/Logger.py" beforeDir="false" afterPath="$PROJECT_DIR$/library/Logger.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/library/Staging.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/library/Variables.py" beforeDir="false" afterPath="$PROJECT_DIR$/library/Variables.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/CsvToDatabaseLoader_2025-01-04_21-10-41.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/CsvToDatabaseLoader_2025-01-04_21-10-51.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/CsvToDatabaseLoader_2025-01-04_21-16-22.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/CsvToDatabaseLoader_2025-01-04_21-16-42.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/CsvToDatabaseLoader_2025-01-04_21-17-06.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/ExportToCsv_2025-01-04_21-07-49.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/ExportToCsv_2025-01-04_21-17-27.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MinorProject/Close" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MinorProject/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MinorProject/backend/.env" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MinorProject/backend/backend/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MinorProject/backend/backend/asgi.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MinorProject/backend/backend/settings.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MinorProject/backend/backend/urls.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MinorProject/backend/backend/wsgi.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MinorProject/backend/events/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MinorProject/backend/events/admin.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MinorProject/backend/events/apps.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MinorProject/backend/events/migrations/0001_initial.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MinorProject/backend/events/migrations/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MinorProject/backend/events/models.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MinorProject/backend/events/permissions.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MinorProject/backend/events/serializers.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MinorProject/backend/events/tests.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MinorProject/backend/events/urls.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MinorProject/backend/events/views.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MinorProject/backend/manage.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MinorProject/backend/requirements.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MinorProject/backend/tickets/admin.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MinorProject/backend/tickets/migrations/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MinorProject/backend/tickets/models.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MinorProject/backend/tickets/views.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MinorProject/backend/users/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MinorProject/backend/users/admin.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MinorProject/backend/users/apps.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MinorProject/backend/users/forms.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MinorProject/backend/users/managers.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MinorProject/backend/users/migrations/0001_initial.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MinorProject/backend/users/migrations/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MinorProject/backend/users/models.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MinorProject/backend/users/serializers.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MinorProject/backend/users/tests.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MinorProject/backend/users/urls.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MinorProject/backend/users/views.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MinorProject/frontend/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MinorProject/frontend/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MinorProject/frontend/package-lock.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MinorProject/frontend/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MinorProject/frontend/public/favicon.ico" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MinorProject/frontend/public/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MinorProject/frontend/public/logo192.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MinorProject/frontend/public/logo512.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MinorProject/frontend/public/manifest.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MinorProject/frontend/public/robots.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MinorProject/frontend/src/App.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MinorProject/frontend/src/App.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MinorProject/frontend/src/App.test.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MinorProject/frontend/src/assets/images/author1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MinorProject/frontend/src/assets/images/author2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MinorProject/frontend/src/assets/images/author3.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MinorProject/frontend/src/assets/images/bg-testimonial.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MinorProject/frontend/src/assets/images/blog1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MinorProject/frontend/src/assets/images/blog2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MinorProject/frontend/src/assets/images/blog3.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MinorProject/frontend/src/assets/images/blog4.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MinorProject/frontend/src/assets/images/blog5.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MinorProject/frontend/src/assets/images/blog6.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MinorProject/frontend/src/assets/images/img-hero1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MinorProject/frontend/src/assets/images/img-hero2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MinorProject/frontend/src/assets/images/img-hero3.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MinorProject/frontend/src/assets/images/img1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MinorProject/frontend/src/assets/images/img10.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MinorProject/frontend/src/assets/images/img11.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MinorProject/frontend/src/assets/images/img12.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MinorProject/frontend/src/assets/images/img13.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MinorProject/frontend/src/assets/images/img14.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MinorProject/frontend/src/assets/images/img15.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MinorProject/frontend/src/assets/images/img2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MinorProject/frontend/src/assets/images/img3.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MinorProject/frontend/src/assets/images/img4.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MinorProject/frontend/src/assets/images/img5.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MinorProject/frontend/src/assets/images/img6.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MinorProject/frontend/src/assets/images/img7.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MinorProject/frontend/src/assets/images/img8.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MinorProject/frontend/src/assets/images/img9.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MinorProject/frontend/src/assets/images/team1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MinorProject/frontend/src/assets/images/team2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MinorProject/frontend/src/assets/images/team3.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MinorProject/frontend/src/assets/images/team4.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MinorProject/frontend/src/assets/images/team5.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MinorProject/frontend/src/assets/images/team6.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MinorProject/frontend/src/assets/images/team7.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MinorProject/frontend/src/assets/images/team8.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MinorProject/frontend/src/components/about.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MinorProject/frontend/src/components/contact.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MinorProject/frontend/src/components/footer.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MinorProject/frontend/src/components/header.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MinorProject/frontend/src/components/hero.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MinorProject/frontend/src/components/services.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MinorProject/frontend/src/components/teams.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MinorProject/frontend/src/components/testimonials.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MinorProject/frontend/src/index.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MinorProject/frontend/src/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MinorProject/frontend/src/logo.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MinorProject/frontend/src/reportWebVitals.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MinorProject/frontend/src/setupTests.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/Close" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/package-lock.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/public/favicon.ico" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/public/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/public/logo192.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/public/logo512.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/public/manifest.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/public/robots.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/src/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/src/App.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/src/App.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/src/App.test.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/src/Close" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/src/actions/auth.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/src/actions/types.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/src/assets/images/author1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/src/assets/images/author2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/src/assets/images/author3.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/src/assets/images/bg-testimonial.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/src/assets/images/blog1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/src/assets/images/blog2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/src/assets/images/blog3.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/src/assets/images/blog4.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/src/assets/images/blog5.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/src/assets/images/blog6.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/src/assets/images/esewa.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/src/assets/images/img-hero1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/src/assets/images/img-hero2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/src/assets/images/img-hero3.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/src/assets/images/img0.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/src/assets/images/img1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/src/assets/images/img10.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/src/assets/images/img11.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/src/assets/images/img12.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/src/assets/images/img13.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/src/assets/images/img14.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/src/assets/images/img15.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/src/assets/images/img2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/src/assets/images/img20.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/src/assets/images/img3.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/src/assets/images/img4.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/src/assets/images/img5.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/src/assets/images/img6.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/src/assets/images/img7.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/src/assets/images/img8.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/src/assets/images/img9.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/src/assets/images/khalti.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/src/assets/images/team1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/src/assets/images/team2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/src/assets/images/team3.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/src/assets/images/team4.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/src/assets/images/team5.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/src/assets/images/team6.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/src/assets/images/team7.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/src/assets/images/team8.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/src/components/Activate.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/src/components/AppEventDetails.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/src/components/AttendedEvents.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/src/components/AttendeeSignUp.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/src/components/AuthUser.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/src/components/Cart.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/src/components/Checkout.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/src/components/CreateEvent.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/src/components/CreateEvent.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/src/components/EventAnalytics.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/src/components/EventOrders.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/src/components/Feedback.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/src/components/Interested.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/src/components/Order.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/src/components/OrganizerSignUp.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/src/components/PaidEvents.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/src/components/Payment.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/src/components/Profile.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/src/components/ProfileSidebar.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/src/components/ProfileSidebar.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/src/components/Purchased.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/src/components/Ratings.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/src/components/Reviews.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/src/components/SearchResults.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/src/components/UpdateEvents.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/src/components/UserTypeSelection.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/src/components/about.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/src/components/analyticsinterested.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/src/components/axios.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/src/components/booked.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/src/components/booking.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/src/components/contact.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/src/components/events.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/src/components/footer.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/src/components/givetestimonial.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/src/components/header.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/src/components/hero.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/src/components/login.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/src/components/logout.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/src/components/profilepage.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/src/components/purchases.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/src/components/services.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/src/components/signup.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/src/components/teams.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/src/components/testimonials.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/src/components/trending.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/src/components/update.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/src/components/updateticket.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/src/context/AuthContext.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/src/hocs/Layout.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/src/index.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/src/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/src/logo.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/src/reducers/auth.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/src/reducers/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/src/reportWebVitals.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/src/setupTests.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/src/store.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/src/utils/PrivateRoute.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/src/utils/useAxios.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/../package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../requirements.txt" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -19,11 +417,12 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="ROOT_SYNC" value="SYNC" />
   </component>
-  <component name="GitHubPullRequestSearchHistory">{
-  &quot;lastFilter&quot;: {
-    &quot;state&quot;: &quot;OPEN&quot;,
-    &quot;assignee&quot;: &quot;neharikastha&quot;
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/neharikastha/DW-BI.git&quot;,
+    &quot;accountId&quot;: &quot;9ef79c62-c7b3-49a3-8d67-5b1a670e369b&quot;
   }
 }</component>
   <component name="ProjectColorInfo">{
@@ -35,26 +434,36 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Python.Database.executor": "Run",
-    "Python.ExportToCsv.executor": "Run",
-    "Python.Logger.executor": "Run",
-    "Python.Staging.executor": "Run",
-    "Python.Variables.executor": "Run",
-    "Python.connct_mysql.executor": "Run",
-    "Python.connect_mysql (1).executor": "Run",
-    "Python.connect_mysql.executor": "Run",
-    "Python.main.executor": "Run",
-    "Python.product_est.executor": "Run",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "last_opened_file_path": "C:/Users/nehar/ETLProject",
-    "run.code.analysis.last.selected.profile": "aDefault",
-    "settings.editor.selected.configurable": "preferences.pluginManager"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Python.Database.executor&quot;: &quot;Run&quot;,
+    &quot;Python.ExportToCsv.executor&quot;: &quot;Run&quot;,
+    &quot;Python.Logger.executor&quot;: &quot;Run&quot;,
+    &quot;Python.Staging.executor&quot;: &quot;Run&quot;,
+    &quot;Python.Variables.executor&quot;: &quot;Run&quot;,
+    &quot;Python.connct_mysql.executor&quot;: &quot;Run&quot;,
+    &quot;Python.connect_mysql (1).executor&quot;: &quot;Run&quot;,
+    &quot;Python.connect_mysql.executor&quot;: &quot;Run&quot;,
+    &quot;Python.main.executor&quot;: &quot;Run&quot;,
+    &quot;Python.product.executor&quot;: &quot;Run&quot;,
+    &quot;Python.product_est.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/nehar/ETLProject/library&quot;,
+    &quot;run.code.analysis.last.selected.profile&quot;: &quot;aDefault&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;
   }
-}]]></component>
-  <component name="RunManager" selected="Python.ExportToCsv">
+}</component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\nehar\ETLProject\library" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\nehar\ETLProject\logs\product_logs" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Python.product">
     <configuration name="Database" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="PythonProject" />
       <option name="ENV_FILES" value="" />
@@ -143,7 +552,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="Variables" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="product" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="PythonProject" />
       <option name="ENV_FILES" value="" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -152,11 +561,11 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/library" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/src" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/library/Variables.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/src/product.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -167,11 +576,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.ExportToCsv" />
+        <item itemvalue="Python.product" />
         <item itemvalue="Python.Database" />
+        <item itemvalue="Python.ExportToCsv" />
         <item itemvalue="Python.Staging" />
         <item itemvalue="Python.Logger" />
-        <item itemvalue="Python.Variables" />
       </list>
     </recent_temporary>
   </component>

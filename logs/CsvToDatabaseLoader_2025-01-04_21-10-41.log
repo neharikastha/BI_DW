@@ -1,5 +1,0 @@
-2025-01-04 21:10:41,686 - INFO - Configuration loaded successfully.
-2025-01-04 21:10:41,776 - INFO - Successfully connected to the database.
-2025-01-04 21:10:41,778 - INFO - Data successfully loaded into OLAP_Product.
-2025-01-04 21:10:41,779 - INFO - Data successfully inserted into OLTP_Product.
-2025-01-04 21:10:41,779 - INFO - Database connection closed.

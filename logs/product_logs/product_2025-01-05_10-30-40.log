@@ -1,0 +1,8 @@
+2025-01-05 10:30:40,454 - INFO - Successfully connected to MySQL!
+2025-01-05 10:30:40,454 - INFO - 
+              SELECT * from OLTP_Neharika.product
+        
+2025-01-05 10:30:40,455 - INFO - Fetched all results.
+2025-01-05 10:30:40,539 - INFO - Data exported to product.csv
+2025-01-05 10:30:40,551 - ERROR - Error loading data: 1452 (23000): Cannot add or update a child row: a foreign key constraint fails (`olap_neharika_stage`.`stg_product`, CONSTRAINT `stg_product_ibfk_1` FOREIGN KEY (`SUBCATEGORY_ID`) REFERENCES `stg_subcategory` (`ID`))
+2025-01-05 10:30:40,552 - INFO - Connection closed.
