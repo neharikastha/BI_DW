@@ -14,7 +14,7 @@ class Database:
                 port=Variables.get_variable("port"),
                 user=Variables.get_variable("user"),
                 password=Variables.get_variable("password"),
-                # database= Variables.get_variable('SRC_DB'),
+                # database = Variables.get_variable('SRC_DB'),
                 allow_local_infile=True  # Enable LOCAL INFILE
             )
             self.cursor = self.connection.cursor()
@@ -62,7 +62,6 @@ class Database:
 
     def load_to_stg(self, file_name):
         try:
-            # self.cursor.execute("USE OLAP_ARCHA;")
             file_path = f"C://ProgramData//MySQL//MySQL Server 8.0//Uploads//{file_name}.csv"
             select_query = f"""
             LOAD DATA INFILE '{file_path}'
@@ -70,7 +69,7 @@ class Database:
             FIELDS TERMINATED BY ','  -- CSV delimiter
             ENCLOSED BY '"'           -- Enclose values in double quotes (if applicable)
             LINES TERMINATED BY '\n'  -- Line delimiter
-            IGNORE 1 LINES        
+            IGNORE 1 LINES
             """
             self.cursor.execute(select_query)
             self.commit()
@@ -85,3 +84,88 @@ class Database:
         pass
 
 
+# import mysql.connector
+# from library.Variables import Variables
+# import pandas as pd
+# from library.Logger import Logger
+
+
+# import logger , pass to constructor of db,
+# Extract the file from source table and create a csv
+# Load the csv file to the Staging table
+# OLTP_<name> - SRC - Product Table [1]
+# OLAP_<name> - Staging/Temp/Target - Product table in all these
+# Send file_name, should create csv from [1]
+# Bring all data to staging first
+# LOAD in file in MySQL (used to load from csv to db table), There should be db and table in staging
+
+
+
+
+# class Database:
+#     def __init__(self, file_name):
+#         try:
+#             self.logger = Logger(file_name)
+#             self.conn = mysql.connector.connect(
+#                 host=Variables.get_variable("host"),
+#                 port=Variables.get_variable("port"),
+#                 user=Variables.get_variable("user"),
+#                 password=Variables.get_variable("password"),
+#                 allow_local_infile=True
+#             )
+#
+#             if self.conn.is_connected():
+#                 self.logger.log_info("Successfully connected to MySQL!")
+#                 self.cursor = self.conn.cursor()
+#
+#         except mysql.connector.Error as e:
+#             self.logger.log_error(f"Error connecting to MySQL: {e}")
+#
+#     def execute_query(self, query):
+#         try:
+#             self.logger.log_info(f"Query:{query}")
+#             self.cursor.execute(query)
+#             self.logger.log_info("Query executed successfully")
+#
+#         except Exception as e:
+#             self.logger.log_error(f"[Error]: {e}")
+#
+#     def disconnect(self):
+#         self.conn.close()
+#
+#     def fetch(self):
+#         data = self.cursor.fetchall()
+#         columns = [desc[0] for desc in self.cursor.description]
+#         df = pd.DataFrame(data, columns=columns)
+#         return df
+#
+#     def ext_to_file(self, table_name):
+#
+#         query = f"""
+#             SELECT * from {Variables.get_variable("SRC_DB")}.{table_name}
+#         """
+#         self.execute_query(query)
+#         data = self.fetch()
+#         data.to_csv(f"{table_name}.csv", index=False)
+#         self.logger.log_info(f"Successfully exported {table_name}.csv")
+#
+#     def commit_query(self):
+#         self.conn.commit()
+#
+#     def load_to_staging(self, file_name):
+#         try:
+#             file_path = f"C://ProgramData//MySQL//MySQL Server 8.0//Uploads//{file_name}.csv"
+#             select_query = f"""
+#             LOAD DATA INFILE '{file_path}'
+#             INTO TABLE OLAP_Neharika_Stage.stg_{file_name}
+#             FIELDS TERMINATED BY ','  -- CSV delimiter
+#             ENCLOSED BY '"'           -- Enclose values in double quotes (if applicable)
+#             LINES TERMINATED BY '\n'  -- Line delimiter
+#             IGNORE 1 LINES
+#             """
+#             self.cursor.execute(select_query)
+#             self.commit()
+#             self.logger.log_info("Data loaded successfully into the staging table.")
+#         except mysql.connector.Error as e:
+#             self.logger.log_error(f"Error loading data: {e}")
+#
