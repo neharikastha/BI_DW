@@ -1,8 +1,0 @@
-2025-01-05 13:05:16,091 - INFO - Successfully connected to MySQL!
-2025-01-05 13:05:16,091 - INFO - 
-              SELECT * from OLTP_Neharika.product
-        
-2025-01-05 13:05:16,092 - INFO - Fetched all results.
-2025-01-05 13:05:16,220 - INFO - Data exported to product.csv
-2025-01-05 13:05:16,223 - ERROR - Error loading data: 1062 (23000): Duplicate entry '1' for key 'stg_product.PRIMARY'
-2025-01-05 13:05:16,223 - INFO - Connection closed.

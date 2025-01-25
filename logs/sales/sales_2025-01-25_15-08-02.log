@@ -1,0 +1,8 @@
+2025-01-25 15:08:02,956 - sales_2025-01-25_15-08-02.log - INFO - Successfully connected to MySQL!
+2025-01-25 15:08:02,956 - sales_2025-01-25_15-08-02.log - INFO - 
+              SELECT * from OLTP_Neharika.sales
+        
+2025-01-25 15:08:02,957 - sales_2025-01-25_15-08-02.log - INFO - Fetched all results.
+2025-01-25 15:08:03,016 - sales_2025-01-25_15-08-02.log - INFO - Data exported to sales.csv
+2025-01-25 15:08:03,018 - sales_2025-01-25_15-08-02.log - ERROR - Error loading data: 1062 (23000): Duplicate entry '1' for key 'stg_sales.PRIMARY'
+2025-01-25 15:08:03,018 - sales_2025-01-25_15-08-02.log - INFO - Connection closed.

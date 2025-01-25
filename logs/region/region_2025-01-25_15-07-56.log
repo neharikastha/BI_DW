@@ -1,0 +1,8 @@
+2025-01-25 15:07:57,059 - region_2025-01-25_15-07-56.log - INFO - Successfully connected to MySQL!
+2025-01-25 15:07:57,059 - region_2025-01-25_15-07-56.log - INFO - 
+              SELECT * from OLTP_Neharika.region
+        
+2025-01-25 15:07:57,060 - region_2025-01-25_15-07-56.log - INFO - Fetched all results.
+2025-01-25 15:07:57,117 - region_2025-01-25_15-07-56.log - INFO - Data exported to region.csv
+2025-01-25 15:07:57,118 - region_2025-01-25_15-07-56.log - ERROR - Error loading data: 1062 (23000): Duplicate entry '1' for key 'stg_region.PRIMARY'
+2025-01-25 15:07:57,119 - region_2025-01-25_15-07-56.log - INFO - Connection closed.

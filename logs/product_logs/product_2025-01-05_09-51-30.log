@@ -1,9 +1,0 @@
-2025-01-05 09:51:30,213 - INFO - Successfully connected to MySQL!
-2025-01-05 09:51:30,213 - INFO - 
-              SELECT * from OLTP_Neharika.product
-        
-2025-01-05 09:51:30,214 - INFO - Fetched all results.
-2025-01-05 09:51:30,218 - INFO - Data exported to product.csv
-2025-01-05 09:51:30,218 - ERROR - Error loading data: 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'f"C:/ProgramData/MySQL/MySQL Server 8.0/Uploads/product.csv"
-            INTO TA' at line 1
-2025-01-05 09:51:30,229 - INFO - Connection closed.

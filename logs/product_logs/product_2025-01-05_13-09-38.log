@@ -1,8 +1,0 @@
-2025-01-05 13:09:39,040 - INFO - Successfully connected to MySQL!
-2025-01-05 13:09:39,040 - INFO - 
-              SELECT * from OLTP_Neharika.product
-        
-2025-01-05 13:09:39,042 - INFO - Fetched all results.
-2025-01-05 13:09:39,112 - INFO - Data exported to product.csv
-2025-01-05 13:09:39,136 - INFO - Data loaded successfully into the staging table.
-2025-01-05 13:09:39,136 - INFO - Connection closed.

@@ -1,0 +1,8 @@
+2025-01-25 15:08:11,064 - category_2025-01-25_15-08-11.log - INFO - Successfully connected to MySQL!
+2025-01-25 15:08:11,064 - category_2025-01-25_15-08-11.log - INFO - 
+              SELECT * from OLTP_Neharika.category
+        
+2025-01-25 15:08:11,065 - category_2025-01-25_15-08-11.log - INFO - Fetched all results.
+2025-01-25 15:08:11,125 - category_2025-01-25_15-08-11.log - INFO - Data exported to category.csv
+2025-01-25 15:08:11,130 - category_2025-01-25_15-08-11.log - ERROR - Error loading data: 1062 (23000): Duplicate entry '1' for key 'stg_category.PRIMARY'
+2025-01-25 15:08:11,132 - category_2025-01-25_15-08-11.log - INFO - Connection closed.
