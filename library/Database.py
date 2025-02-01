@@ -1,3 +1,5 @@
+import os
+
 import mysql.connector
 import pandas as pd
 from library.Variables import Variables
@@ -14,7 +16,6 @@ class Database:
                 port=Variables.get_variable("port"),
                 user=Variables.get_variable("user"),
                 password=Variables.get_variable("password"),
-                # database = Variables.get_variable('SRC_DB'),
                 allow_local_infile=True  # Enable LOCAL INFILE
             )
             self.cursor = self.connection.cursor()
@@ -80,8 +81,112 @@ class Database:
     def commit(self):
         self.connection.commit()
 
+    def delete_csv(self, file_path):
+        try:
+            if os.path.exists(file_path):
+                os.remove(file_path)
+                self.logger.log_info(f"CSV file {file_path} deleted successfully.")
+            else:
+                self.logger.log_error(f"File {file_path} does not exist.")
+        except Exception as e:
+            self.logger.log_error(f"Error deleting CSV file: {e}")
+
     def fetch(self):
         pass
+
+
+# import mysql.connector
+# from library.Variables import Variables
+# from library.Logger import Logger
+#
+#
+# class Database:
+#     def __init__(self, file_name):
+#         try:
+#             self.logger = Logger(file_name)
+#             self.connection = mysql.connector.connect(
+#                 host=Variables.get_variable("host"),
+#                 port=Variables.get_variable("port"),
+#                 user=Variables.get_variable("user"),
+#                 password=Variables.get_variable("password"),
+#                 database=Variables.get_variable("SRC_DB")  # Connect to source DB
+#             )
+#             self.cursor = self.connection.cursor()
+#             if self.connection.is_connected():
+#                 self.logger.log_info("Successfully connected to MySQL!")
+#         except mysql.connector.Error as e:
+#             self.logger.log_error(f"Error connecting to MySQL: {e}")
+#
+#     def execute_query(self, query):
+#         """Executes a given SQL query."""
+#         try:
+#             self.logger.log_info(f"Executing query: {query}")
+#             self.cursor.execute(query)
+#             self.connection.commit()
+#             self.logger.log_info("Query executed successfully")
+#         except mysql.connector.Error as e:
+#             self.logger.log_error(f"Query execution error: {e}")
+#
+#     def fetch_data(self, query):
+#         """Fetches data from the database and returns it as a list of tuples."""
+#         try:
+#             self.execute_query(query)
+#             results = self.cursor.fetchall()
+#             self.logger.log_info("Fetched data successfully.")
+#             return results
+#         except mysql.connector.Error as e:
+#             self.logger.log_error(f"Error fetching data: {e}")
+#             return []
+#
+#     def load_to_stg(self, table_name):
+#         """Loads data from source table into the staging table."""
+#         try:
+#             src_table = f"{Variables.get_variable('SRC_DB')}.{table_name}"
+#             stg_table = f"OLAP_Neharika_Stage.stg_{table_name}"
+#
+#             # Insert data from source to staging
+#             load_query = f"""
+#             INSERT INTO {stg_table}
+#             SELECT * FROM {src_table};
+#             """
+#             self.execute_query(load_query)
+#             self.logger.log_info(f"Data loaded from {src_table} to {stg_table}")
+#             return stg_table
+#         except mysql.connector.Error as e:
+#             self.logger.log_error(f"Error loading data to staging: {e}")
+#
+#     def load_to_temp(self, stg_table):
+#         """Loads data from staging table into the temp table."""
+#         try:
+#             temp_table = "olap_neharika_temp.tmp_category"
+#
+#             # Ensure the temp table exists
+#             create_query = f"""
+#             CREATE TABLE IF NOT EXISTS {temp_table} LIKE {stg_table};
+#             """
+#             self.execute_query(create_query)
+#
+#             # Insert data from staging to temp table
+#             load_query = f"""
+#             INSERT INTO {temp_table}
+#             SELECT * FROM {stg_table};
+#             """
+#             self.execute_query(load_query)
+#             self.logger.log_info(f"Data loaded from {stg_table} to {temp_table}")
+#         except mysql.connector.Error as e:
+#             self.logger.log_error(f"Error loading data to temp table: {e}")
+#
+#     def disconnect(self):
+#         """Closes the database connection."""
+#         try:
+#             if self.cursor:
+#                 self.cursor.close()
+#             if self.connection:
+#                 self.connection.close()
+#             self.logger.log_info("Connection closed.")
+#         except mysql.connector.Error as e:
+#             self.logger.log_error(f"Error closing connection: {e}")
+
 
 
 # import mysql.connector

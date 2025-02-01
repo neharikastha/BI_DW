@@ -11,6 +11,8 @@ try:
     df= db.ext_to_file(file_name)
     stg_table = db.load_to_stg(file_name)
 
+    db.delete_csv(f"C://ProgramData//MySQL//MySQL Server 8.0//Uploads//{file_name}.csv")
+
 except Exception as e:
     print(f"An error : {e}")
 finally:

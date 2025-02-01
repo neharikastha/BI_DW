@@ -35,7 +35,7 @@ class Logger:
         current_ts = datetime.datetime.now().strftime('%Y-%m-%d_%H-%M-%S')
 
         # Load config file to get log_path dynamically
-        config_path = "C:/Users/nehar/ETLProject/config/config.json"  # Adjust the path as needed
+        config_path = "C:/Users/nehar/BI_DW/config/config.json"  # Adjust the path as needed
         config = load_config(config_path)
 
         if not config:
