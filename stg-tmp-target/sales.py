@@ -41,6 +41,7 @@ def load_tmp_to_tgt():
         print(f"Truncated table {tgt_table}")
 
         # Insert data from tmp_table to tgt_table with correct joins
+        # Insert data from tmp_table to tgt_table with correct joins
         insert_query = f"""
         INSERT INTO {tgt_table} (SLS_ID, LOCN_KY, DT_KY, PDT_KY, CUSTOMER_KY, TRANSACTION_TIME, QTY, AMT, DSCNT, ROW_INSRT_TMS, ROW_UPDT_TMS)
         SELECT 
@@ -48,19 +49,20 @@ def load_tmp_to_tgt():
           L.LOCN_KY,
           CA.DAY_KEY,
           P.PDT_KY,                  
-          C.CUSTOMER_KY,             
+          COALESCE(C.CUSTOMER_KY, -1) AS CUSTOMER_KY,             
           S.TRANSACTION_TIME,        
           S.QUANTITY AS QTY,         
           S.AMOUNT AS AMT,           
-          S.DISCOUNT AS DSCNT,       
+          S.DISCOUNT AS DSCNT, 
           CURRENT_TIMESTAMP,         
           CURRENT_TIMESTAMP          
         FROM {tmp_table} S
         LEFT JOIN {product} P ON S.PRODUCT_ID = P.PDT_ID  
-        LEFT JOIN {customer} C ON S.CUSTOMER_ID = C.CUSTOMER_ID
+        LEFT JOIN {customer} C ON COALESCE(S.CUSTOMER_ID, null) = C.CUSTOMER_ID
         LEFT JOIN {locn} L ON S.STORE_ID = L.LOCN_ID
-        LEFT JOIN {dim_calendar} CA ON DATE(S.TRANSACTION_TIME) = CA.DATE;
-        """
+        LEFT JOIN {dim_calendar} CA ON DATE(S.TRANSACTION_TIME) = CA.DATE;       
+"""
+
         db.execute_query(insert_query)
         db.commit()
         print(f"Data loaded from {tmp_table} to {tgt_table}")

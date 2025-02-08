@@ -9,8 +9,9 @@ def load_stg_to_tmp():
         db = Database(file_name)
         print("Connected to the database")
 
-        stg_table = f"{Variables.get_variable('STG_DB')}.stg_store"
-        tmp_table = f"{Variables.get_variable('TMP_DB')}.tmp_store"
+        stg_table = f"{Variables.get_variable('STG_DB')}.stg_{file_name}"
+        tmp_table = f"{Variables.get_variable('TMP_DB')}.tmp_{file_name}"
+        tgt_table = f"{Variables.get_variable('TGT_DB')}.d_retail_rgn_t"
 
         db.execute_query("SET FOREIGN_KEY_CHECKS = 0;")
 
@@ -22,13 +23,30 @@ def load_stg_to_tmp():
 
         # Insert data from staging table to temp table
         insert_query = f"""
-        INSERT INTO {tmp_table} (ID, REGION_ID, STORE_DESC)
-        SELECT *
-        FROM {stg_table} 
-"""
+        INSERT INTO {tmp_table} 
+        SELECT * FROM {stg_table}
+        """
         db.execute_query(insert_query)
         db.commit()
         print(f"Data loaded from {stg_table} to {tmp_table}")
+
+
+        truncate_query = f"TRUNCATE TABLE {tgt_table}"
+        db.execute_query(truncate_query)
+        db.commit()
+        print(f"Truncated table {tgt_table}")
+
+        insert_query = f"""
+        INSERT INTO {tgt_table} (RGN_ID,CNTRY_KY, RGN_DESC, ROW_INSRT_TMS, ROW_UPDT_TMS)
+        SELECT R.ID, R.COUNTRY_ID, R.REGION_DESC, CURRENT_TIMESTAMP, CURRENT_TIMESTAMP
+        FROM {tmp_table} R
+        LEFT JOIN {tgt_table} C
+        ON R.COUNTRY_ID = C.RGN_ID;
+        """
+
+        db.execute_query(insert_query)
+        db.commit()
+        print(f"Data loaded from {tmp_table} to {tgt_table}")
 
     except Exception as e:
         print(f"An error occurred: {e}")

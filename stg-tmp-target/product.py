@@ -16,7 +16,7 @@ def load_stg_to_tmp():
         # Table names with dynamic DB name injection
         stg_table = f"{Variables.get_variable('STG_DB')}.stg_product"
         tmp_table = f"{Variables.get_variable('TMP_DB')}.tmp_product"
-        tgt_table = f"{Variables.get_variable('TGT_DB')}.d_retail_pdt_t"
+        tgt_table = f"{Variables.get_variable('TGT_DB')}"
 
         db.execute_query("SET FOREIGN_KEY_CHECKS = 0;")
 
@@ -38,13 +38,13 @@ def load_stg_to_tmp():
 
 
 
-        truncate_query = f"TRUNCATE TABLE {tgt_table}"
+        truncate_query = f"TRUNCATE TABLE {tgt_table}.d_retail_pdt_t"
         db.execute_query(truncate_query)
         db.commit()
-        print(f"Truncated table {tgt_table}")
+        print(f"Truncated table {tgt_table}.d_retail_pdt_t")
 
         insert_query = f"""
-        INSERT INTO {tgt_table} (PDT_ID,SUB_CTGRY_KY,CTGRY_KY,PDT_DESC, ROW_INSRT_TMS, ROW_UPDT_TMS)
+        INSERT INTO {tgt_table}.d_retail_pdt_t (PDT_ID,SUB_CTGRY_KY,CTGRY_KY,PDT_DESC, ROW_INSRT_TMS, ROW_UPDT_TMS)
             SELECT 
                 P.ID,
                 S.SUB_CTGRY_KY,        
@@ -53,13 +53,13 @@ def load_stg_to_tmp():
                 CURRENT_TIMESTAMP, 
                 CURRENT_TIMESTAMP
         FROM {tmp_table} P
-        LEFT JOIN {tgt_table} S 
+        LEFT JOIN {tgt_table}.d_retail_sub_ctgry_t S 
           ON P.SUBCATEGORY_ID = S.SUB_CTGRY_KY;
         """
 
         db.execute_query(insert_query)
         db.commit()
-        print(f"Data loaded from {tmp_table} to {tgt_table}")
+        print(f"Data loaded from {tmp_table} to {tgt_table}.d_retail_pdt_t")
 
         # # SCD1 Update - Update existing records in target table based on product_desc
         # update_query_scd1 = f"""
