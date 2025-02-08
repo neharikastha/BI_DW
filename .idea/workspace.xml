@@ -5,7 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="870de6e0-d5e1-4ed5-a10d-39c7d51f72fb" name="Changes" comment="changes : staging table">
-      <change afterPath="$PROJECT_DIR$/stg-tmp-target/region.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../My_All_Projects/Flutter_projects/DrishtiKosh" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../My_All_Projects/Flutter_projects/SDK/flutter" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../My_All_Projects/Flutter_projects/flutter_application_1/.gitignore" afterDir="false" />
@@ -157,15 +157,6 @@
       <change afterPath="$PROJECT_DIR$/../My_All_Projects/Flutter_projects/platform-tools/source.properties" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../My_All_Projects/Flutter_projects/platform-tools/sqlite3.exe" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../My_All_Projects/MinorProject" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/library/Database.py" beforeDir="false" afterPath="$PROJECT_DIR$/library/Database.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/product.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/product.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sales.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/sales.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/stg-tmp-target/location.py" beforeDir="false" afterPath="$PROJECT_DIR$/stg-tmp-target/location.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/stg-tmp-target/product.py" beforeDir="false" afterPath="$PROJECT_DIR$/stg-tmp-target/product.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/stg-tmp-target/sales.py" beforeDir="false" afterPath="$PROJECT_DIR$/stg-tmp-target/sales.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/stg-tmp-target/store.py" beforeDir="false" afterPath="$PROJECT_DIR$/stg-tmp-target/store.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/stg-tmp-target/subcategory.py" beforeDir="false" afterPath="$PROJECT_DIR$/stg-tmp-target/subcategory.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../MinorProject/Close" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../MinorProject/README.md" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../MinorProject/backend/.env" beforeDir="false" />
@@ -418,39 +409,39 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Python.Database.executor&quot;: &quot;Run&quot;,
-    &quot;Python.ExportToCsv.executor&quot;: &quot;Run&quot;,
-    &quot;Python.Logger.executor&quot;: &quot;Run&quot;,
-    &quot;Python.Staging.executor&quot;: &quot;Run&quot;,
-    &quot;Python.Variables.executor&quot;: &quot;Run&quot;,
-    &quot;Python.agg_sls_plc_month.executor&quot;: &quot;Run&quot;,
-    &quot;Python.category.executor&quot;: &quot;Run&quot;,
-    &quot;Python.connct_mysql.executor&quot;: &quot;Run&quot;,
-    &quot;Python.connect_mysql (1).executor&quot;: &quot;Run&quot;,
-    &quot;Python.connect_mysql.executor&quot;: &quot;Run&quot;,
-    &quot;Python.country.executor&quot;: &quot;Run&quot;,
-    &quot;Python.customer.executor&quot;: &quot;Run&quot;,
-    &quot;Python.location.executor&quot;: &quot;Run&quot;,
-    &quot;Python.main.executor&quot;: &quot;Run&quot;,
-    &quot;Python.product.executor&quot;: &quot;Run&quot;,
-    &quot;Python.product_est.executor&quot;: &quot;Run&quot;,
-    &quot;Python.region.executor&quot;: &quot;Run&quot;,
-    &quot;Python.sales.executor&quot;: &quot;Run&quot;,
-    &quot;Python.store.executor&quot;: &quot;Run&quot;,
-    &quot;Python.subcategory.executor&quot;: &quot;Run&quot;,
-    &quot;Python.subcategpry.executor&quot;: &quot;Run&quot;,
-    &quot;Python.tmp_category.executor&quot;: &quot;Run&quot;,
-    &quot;Python.tmp_subcategory.executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/nehar/BI_DW&quot;,
-    &quot;run.code.analysis.last.selected.profile&quot;: &quot;aDefault&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Python.Database.executor": "Run",
+    "Python.ExportToCsv.executor": "Run",
+    "Python.Logger.executor": "Run",
+    "Python.Staging.executor": "Run",
+    "Python.Variables.executor": "Run",
+    "Python.agg_sls_plc_month.executor": "Run",
+    "Python.category.executor": "Run",
+    "Python.connct_mysql.executor": "Run",
+    "Python.connect_mysql (1).executor": "Run",
+    "Python.connect_mysql.executor": "Run",
+    "Python.country.executor": "Run",
+    "Python.customer.executor": "Run",
+    "Python.location.executor": "Run",
+    "Python.main.executor": "Run",
+    "Python.product.executor": "Run",
+    "Python.product_est.executor": "Run",
+    "Python.region.executor": "Run",
+    "Python.sales.executor": "Run",
+    "Python.store.executor": "Run",
+    "Python.subcategory.executor": "Run",
+    "Python.subcategpry.executor": "Run",
+    "Python.tmp_category.executor": "Run",
+    "Python.tmp_subcategory.executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "git-widget-placeholder": "Merging master",
+    "last_opened_file_path": "C:/Users/nehar/BI_DW",
+    "run.code.analysis.last.selected.profile": "aDefault",
+    "settings.editor.selected.configurable": "preferences.pluginManager"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\nehar\ETLProject\library" />
